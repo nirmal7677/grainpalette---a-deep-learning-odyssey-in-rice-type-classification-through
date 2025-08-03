@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pollen Grain Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Pollen Grain Identifier & Report Generator</h1>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <br>
+        <button type="submit">Upload Image</button>
+    </form>
+
+    <div class="footer-images">
+        <img src="static\\riceGrainTestImages\\image1.webp" alt="Sample 1">
+        <img src="static\\riceGrainTestImages\\image2.webp" alt="Sample 2">
+        <img src="static\\riceGrainTestImages\\image3.webp" alt="Sample 3">
+        <img src="static\\riceGrainTestImages\\image4.webp" alt="Sample 4">
+    </div>
+</body>
+</html>

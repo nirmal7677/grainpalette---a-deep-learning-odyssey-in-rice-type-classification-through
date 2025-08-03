@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detection Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="prediction-box">
+        <h2>Prediction: <span style="color:#00bcd4;">{{ label }}</span></h2>
+        <p>Confidence: {{ confidence | round(2) }}%</p>
+        <img class="image-preview" src="{{ url_for('send_file', filename=filename) }}" alt="Predicted Image">
+    </div>
+
+    <a href="/" class="back-link">← Go Back</a>
+</body>
+</html>
